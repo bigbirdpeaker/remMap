@@ -1,0 +1,5 @@
+remMap         A function for performing regularized multivariate regression with the MAP penalty. 
+remMap.df      A function for calculating the degrees of freedom of the remMap estimator.
+remMap.BIC     A function for fitting remMap models for a series of tuning parameters and returning the corresponding BIC scores.
+remMap.CV      A function for fitting remMap models for a series of tuning parameters and returning the corresponding v-fold cross-validation scores.
+

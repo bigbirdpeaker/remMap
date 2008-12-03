@@ -1,0 +1,2 @@
+useDynLib(remMap)
+export(remMap,remMap.df,remMap.CV,remMap.BIC)
