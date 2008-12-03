@@ -185,7 +185,7 @@ remMap.BIC<-function(X.m, Y.m,lamL1.v, lamL2.v, C.m=NULL)
      if(i>1) phi.old=phi.last
        for(j in 1:k2)        
          {          
-          print(paste(i,j))               
+          #print(paste(i,j))               
           cur.lam1=lambda1.v[i]          
           cur.lam2=lambda2.v[j]
           temp=remMap(X.m, Y.m, lamL1=cur.lam1, lamL2=cur.lam2, phi0=phi.old, C.m=C.m)          
@@ -253,7 +253,7 @@ remMap.CV<-function(X, Y,lamL1.v, lamL2.v, C.m=NULL, fold=10, seed=1)
  rss.cv.cv<-NULL 
  ols.cv.cv<-NULL   
  for(f in 1:fold)
-  {  print(paste("fold=",f))   
+  {  #print(paste("fold=",f))   
      index.cur.cv<-index.cv[[f]]   
      X.m<-X[-(index.cur.cv),]   
      Y.m<-Y[-(index.cur.cv),]   
@@ -270,7 +270,7 @@ remMap.CV<-function(X, Y,lamL1.v, lamL2.v, C.m=NULL, fold=10, seed=1)
        if(i>1) phi.old=phi.last      
        for(j in 1:k2)       
        {          
-          print(paste(i,j))               
+          #print(paste(i,j))               
           cur.lam1=lambda1.v[i]          
           cur.lam2=lambda2.v[j]
           temp=remMap(X.m, Y.m, lamL1=cur.lam1, lamL2=cur.lam2, phi0=phi.old, C.m=C.m)          
